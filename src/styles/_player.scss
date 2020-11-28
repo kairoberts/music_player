@@ -1,0 +1,94 @@
+.player-container {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time-control {
+  width: 50%;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  input {
+    width: 100%;
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  p {
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1rem;
+  width: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+input[type="range"]::-moz-slider-thumb {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.track {
+  background-color: lightblue;
+  width: 100%;
+  height: 1rem;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.animate-track {
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(0%);
+  pointer-events: none;
+}
+
+.play-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  width: 35%;
+  .playpause-icons {
+    cursor: pointer;
+  }
+  .skip-back,
+  .skip-forward {
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .skip-back:hover,
+  .skip-forward:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .time-control {
+    width: 90%;
+    padding: 1rem;
+  }
+  .play-control {
+    padding: 1rem;
+    width: 80%;
+  }
+}
