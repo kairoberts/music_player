@@ -1,85 +1,120 @@
 import { v4 as uuidv4 } from "uuid";
+// Nipsey hussle songs
+import bhfawimage from "./audioimages/bhfaw.jpg";
+import npimage from "./audioimages/npimage.jpg";
+import sbimage from "./audioimages/sbimage.jpg";
+import bhfaw from "./audio/BHFAW.mp3";
+import killa from "./audio/killa.mp3";
+import thik from "./audio/thik.mp3";
+import clarity from "./audio/clarity.mp3";
+import shellshocked from "./audio/shellshocked.mp3";
+import stress from "./audio/stress.mp3";
+import rolling from "./audio/rolling.mp3";
+import sitg from "./audio/sitg.mp3";
+import ngn from "./audio/ngn.mp3";
+import effortless from "./audio/effortless.mp3";
+import noneofthis from "./audio/noneofthis.mp3";
+
 function Music() {
   return [
     {
-      name: "Beaver Creek",
-      cover:
-        "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
-      artist: "Aso, Middle School, Aviino",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=10075",
-      color: ["#205950", "#2ab3bf"],
+      name: "Be Here For A While",
+      cover: bhfawimage,
+      artist: "Nipsey Hussle",
+      audio: bhfaw,
+      color: ["#BC82FD", "#0ca2af"],
       id: uuidv4(),
       active: true,
     },
     {
-      name: "Daylight",
-      cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
-      artist: "Aiguille",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9272",
-      color: ["#EF8EA9", "#ab417f"],
+      name: "Killa",
+      cover: bhfawimage,
+      artist: "Nipsey Hussle",
+      audio: killa,
+      color: ["#BC82FD", "#0ca2af"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Keep Going",
-      cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-      artist: "Swørn",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9222",
-      color: ["#CD607D", "#c94043"],
+      name: "That's How I Knew",
+      cover: bhfawimage,
+      artist: "Nipsey Hussle",
+      audio: thik,
+      color: ["#BC82FD", "#0ca2af"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Nightfall",
-      cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
-      artist: "Aiguille",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9148",
-      color: ["#EF8EA9", "#ab417f"],
+      name: "Clarity",
+      cover: sbimage,
+      artist: "Nipsey Hussle Ft Bino Rideaux & Dave East",
+      audio: clarity,
+      color: ["#BC82FD", "#0ca2af"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Reflection",
-      cover:
-        "https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-      artist: "Swørn",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=9228",
-      color: ["#CD607D", "#c94043"],
+      name: "Rolling",
+      cover: sbimage,
+      artist: "Nipsey Hussle",
+      audio: rolling,
+      color: ["#BC82FD", "#0ca2af"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Under the City Stars",
-      cover:
-        "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
-      artist: "Aso, Middle School, Aviino",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=10074",
-      color: ["#205950", "#2ab3bf"],
+      name: "Shell Shocked",
+      cover: sbimage,
+      artist: "Nipsey Hussle",
+      audio: shellshocked,
+      color: ["#BC82FD", "#0ca2af"],
       id: uuidv4(),
       active: false,
     },
     {
-      name: "Witch Hat",
-      cover:
-        "https://chillhop.com/wp-content/uploads/2020/09/c209a7df7b9bc133dfff73ce86ebc3c57c2b73dd-1024x1024.jpg",
-      artist: "Sleepy Fish",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=10017",
-      color: ["#2A3A58", "#5893A6"],
+      name: "I Don't Stress",
+      cover: sbimage,
+      artist: "Nipsey Hussle",
+      audio: stress,
+      color: ["#BC82FD", "#0ca2af"],
       id: uuidv4(),
-      active: "false",
+      active: false,
     },
     {
-      name: "Trenches",
-      cover:
-        "https://chillhop.com/wp-content/uploads/2020/09/2899f7cc22ab12e17d0119819aac3ca9dbab46e6-1024x1024.jpg",
-      artist: "Philanthrope, Sleepy Fish",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=10247",
-      color: ["#7F3B2D", "#5E2827"],
+      name: "Never Gone Know",
+      cover: npimage,
+      artist: "Nipsey Hussle Ft Bino Rideaux",
+      audio: ngn,
+      color: ["#BC82FD", "#0ca2af"],
       id: uuidv4(),
-      active: "false",
+      active: false,
+    },
+    {
+      name: "Stucc In The Grind",
+      cover: npimage,
+      artist: "Nipsey Hussle Ft Bino Rideaux",
+      audio: sitg,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "Effortless",
+      cover: npimage,
+      artist: "Nipsey Hussle Ft Bino Rideaux",
+      audio: effortless,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "None Of This",
+      cover: npimage,
+      artist: "Nipsey Hussle Ft Bino Rideaux",
+      audio: noneofthis,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
     },
   ];
 }

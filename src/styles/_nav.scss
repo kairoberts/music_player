@@ -10,13 +10,13 @@ nav {
     border: none;
     cursor: pointer;
     outline: none;
-    border: 1px solid rgb(209, 175, 248);
-    box-shadow: 1px 1px 1rem rgb(209, 175, 248);
+    border: 1px solid rgb(188, 130, 253);
+    box-shadow: 1px 1px 1rem rgb(188, 130, 253);
     border-radius: 8%;
-    padding: 0.6rem;
-    transition: transform 0.7s;
+    padding: 0.8rem;
+    transition: transform 0.5s;
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
       background: rgb(245, 241, 241);
     }
   }
