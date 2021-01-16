@@ -14,6 +14,25 @@ import sitg from "./audio/sitg.mp3";
 import ngn from "./audio/ngn.mp3";
 import effortless from "./audio/effortless.mp3";
 import noneofthis from "./audio/noneofthis.mp3";
+// Wiz khalifa songs
+import taimage from "./audioimages/taimage.jpg";
+import california from "./audio/california.mp3";
+import miawallace from "./audio/miawallace.mp3";
+// Mac Miller songs
+import bdeimage from "./audioimages/bdeimage.jpg";
+import kids from "./audioimages/kids.jpg";
+import donaldtrump from "./audio/donaldtrump.mp3";
+import bestdayever from "./audio/bde.mp3";
+import kanfp from "./audio/kanfp.mp3";
+import nomf from "./audio/nomf.mp3";
+// Kid cudi songs
+import motnimage from "./audioimages/motnimage.jpg";
+import citr from "./audio/citr.mp3";
+import dnn from "./audio/dnn.mp3";
+// The underachievers songs
+import indigosim from "./audioimages/indigoism.jpg";
+import herbshuttles from "./audio/herbshuttles.mp3";
+import mahdi from "./audio/mahdi.mp3";
 
 function Music() {
   return [
@@ -112,6 +131,96 @@ function Music() {
       cover: npimage,
       artist: "Nipsey Hussle Ft Bino Rideaux",
       audio: noneofthis,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "California",
+      cover: taimage,
+      artist: "Wiz Khalifa",
+      audio: california,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "Mia Wallace",
+      cover: taimage,
+      artist: "Wiz Khalifa",
+      audio: miawallace,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "Best Day Ever",
+      cover: bdeimage,
+      artist: "Mac Miller",
+      audio: bestdayever,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "Donald Trump",
+      cover: bdeimage,
+      artist: "Mac Miller",
+      audio: donaldtrump,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "Kool Aid And Frozen Pizza",
+      cover: kids,
+      artist: "Mac Miller",
+      audio: kanfp,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "Nikes On My Feet",
+      cover: kids,
+      artist: "Mac Miller",
+      audio: nomf,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "Cleveland Is The Reason",
+      cover: motnimage,
+      artist: "Kid Cudi",
+      audio: citr,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "Day N Nite",
+      cover: motnimage,
+      artist: "Kid Cudi",
+      audio: dnn,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "Herb Shuttles",
+      cover: indigosim,
+      artist: "The Underachievers",
+      audio: herbshuttles,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "The Mahdi",
+      cover: indigosim,
+      artist: "The Underachievers",
+      audio: mahdi,
       color: ["#BC82FD", "#0ca2af"],
       id: uuidv4(),
       active: false,

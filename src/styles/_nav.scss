@@ -6,19 +6,18 @@ nav {
   padding-left: 4rem;
   padding-right: 4rem;
   button {
-    background: white;
-    border: none;
+    font-weight: bold;
+    font-size: 1rem;
     cursor: pointer;
+    padding: 1rem 1rem;
     outline: none;
-    border: 1px solid rgb(188, 130, 253);
-    box-shadow: 1px 1px 1rem rgb(188, 130, 253);
-    border-radius: 8%;
-    padding: 0.8rem;
-    transition: transform 0.5s;
-    &:hover {
-      transform: scale(1.05);
-      background: rgb(245, 241, 241);
-    }
+    border: 2px solid rgb(188, 130, 253);
+    background-color: transparent;
+    color: white;
+    transition: all 0.5s ease;
+  }
+  button:hover {
+    background-color: rgb(188, 130, 253);
   }
 }
 
