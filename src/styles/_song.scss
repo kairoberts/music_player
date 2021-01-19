@@ -55,3 +55,12 @@
     transition: all 0.7s ease;
   }
 }
+
+@media only screen and (min-device-width: 1800px) {
+  .artist-image {
+    width: 19%;
+  }
+  .artist-image-large {
+    width: 24%;
+  }
+}

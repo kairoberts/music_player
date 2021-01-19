@@ -39,6 +39,7 @@ const Player = ({
       setIsPlaying(!isPlaying);
     }
   };
+
   // Breaks down the time into minutes rather than one number
   const getTime = (time) => {
     return (
