@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import { MusicContext } from "../context/MusicContext";
 
-const LibrarySong = ({
-  song,
-  songs,
-  setCurrentSong,
-  audioRef,
-  isPlaying,
-  id,
-  setSongs,
-}) => {
+const LibrarySong = ({ song }) => {
+  const {
+    songs,
+    setCurrentSong,
+    audioRef,
+    isPlaying,
+    setSongs,
+    id,
+  } = useContext(MusicContext);
+
   // setting the song
   const songHandler = async () => {
     await setCurrentSong(song);
@@ -35,8 +37,9 @@ const LibrarySong = ({
     <div
       onClick={songHandler}
       className={`library-songs ${song.active ? "selected" : " "}`}
+      key={id}
     >
-      <img src={song.cover} alt={song.name}></img>
+      <img src={song.cover} alt={song.name} />
       <div className="song-description">
         <h3>{song.name}</h3>
         <h4>{song.artist}</h4>

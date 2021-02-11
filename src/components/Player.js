@@ -1,16 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { FiPlay } from "react-icons/fi";
 import { AiOutlineLeft, AiOutlinePause, AiOutlineRight } from "react-icons/ai";
+import { MusicContext } from "../context/MusicContext";
 
-const Player = ({
-  currentSong,
-  isPlaying,
-  setIsPlaying,
-  audioRef,
-  songs,
-  setCurrentSong,
-  setSongs,
-}) => {
+const Player = () => {
+  const {
+    currentSong,
+    isPlaying,
+    setIsPlaying,
+    audioRef,
+    songs,
+    setCurrentSong,
+    setSongs,
+  } = useContext(MusicContext);
+
   // Updates the UI to active song when changed
   const libraryUpdater = (nextPrev) => {
     const activeSong = songs.map((song) => {

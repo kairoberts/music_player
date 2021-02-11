@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { MusicContext } from "../context/MusicContext";
 
-const Song = ({ currentSong, isPlaying }) => {
+const Song = () => {
+  const { isPlaying, currentSong } = useContext(MusicContext);
   return (
     <div className="song-container">
       {isPlaying === false ? (
