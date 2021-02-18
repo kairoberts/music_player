@@ -7,25 +7,29 @@ import bhfawimage from "./audioimages/bhfaw.jpg";
 import npimage from "./audioimages/npimage.jpg";
 import sbimage from "./audioimages/sbimage.jpg";
 import bhfaw from "./audio/BHFAW.mp3";
-import shellshocked from "./audio/shellshocked.mp3";
 import rolling from "./audio/rolling.mp3";
 import sitg from "./audio/sitg.mp3";
 import effortless from "./audio/effortless.mp3";
-import noneofthis from "./audio/noneofthis.mp3";
-// Wiz khalifa songs
-import taimage from "./audioimages/taimage.jpg";
-import california from "./audio/california.mp3";
-import miawallace from "./audio/miawallace.mp3";
 // Mac Miller songs
-import bdeimage from "./audioimages/bdeimage.jpg";
 import kids from "./audioimages/kids.jpg";
-import bestdayever from "./audio/bde.mp3";
-import kanfp from "./audio/kanfp.mp3";
 import nomf from "./audio/nomf.mp3";
 // Kid cudi songs
 import motnimage from "./audioimages/motnimage.jpg";
 import citr from "./audio/citr.mp3";
 import dnn from "./audio/dnn.mp3";
+// lofi hiphop
+import dryhope from "./audioimages/dryhope.jpg";
+import envision from "./audio/envision.mp3";
+
+import shuko from "./audioimages/shuko.jpg";
+import fiveam from "./audio/5am.mp3";
+import cruising from "./audio/cruisin.mp3";
+
+import swornsong from "./audioimages/sworn.jpg";
+import tumbling from "./audio/tumbling.mp3";
+
+import tft from "./audioimages/thefieldtapes.jpg";
+import harbor from "./audio/harbour.mp3";
 
 function Music() {
   return [
@@ -39,10 +43,37 @@ function Music() {
       active: true,
     },
     {
+      name: "Envision",
+      cover: dryhope,
+      artist: "Dryhope",
+      audio: envision,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
       name: "Be Here For A While",
       cover: bhfawimage,
       artist: "Nipsey Hussle",
       audio: bhfaw,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "5am",
+      cover: shuko,
+      artist: "Ruck P & Shuko",
+      audio: fiveam,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "Cruisin",
+      cover: shuko,
+      artist: "Loop Schrauber & TRIBEZ.",
+      audio: cruising,
       color: ["#BC82FD", "#0ca2af"],
       id: uuidv4(),
       active: false,
@@ -57,10 +88,10 @@ function Music() {
       active: false,
     },
     {
-      name: "Shell Shocked",
-      cover: sbimage,
-      artist: "Nipsey Hussle",
-      audio: shellshocked,
+      name: "Tumbling",
+      cover: swornsong,
+      artist: "Swørn",
+      audio: tumbling,
       color: ["#BC82FD", "#0ca2af"],
       id: uuidv4(),
       active: false,
@@ -84,55 +115,19 @@ function Music() {
       active: false,
     },
     {
-      name: "None Of This",
-      cover: npimage,
-      artist: "Nipsey Hussle Ft Bino Rideaux",
-      audio: noneofthis,
-      color: ["#BC82FD", "#0ca2af"],
-      id: uuidv4(),
-      active: false,
-    },
-    {
-      name: "California",
-      cover: taimage,
-      artist: "Wiz Khalifa",
-      audio: california,
-      color: ["#BC82FD", "#0ca2af"],
-      id: uuidv4(),
-      active: false,
-    },
-    {
-      name: "Mia Wallace",
-      cover: taimage,
-      artist: "Wiz Khalifa",
-      audio: miawallace,
-      color: ["#BC82FD", "#0ca2af"],
-      id: uuidv4(),
-      active: false,
-    },
-    {
-      name: "Best Day Ever",
-      cover: bdeimage,
-      artist: "Mac Miller",
-      audio: bestdayever,
-      color: ["#BC82FD", "#0ca2af"],
-      id: uuidv4(),
-      active: false,
-    },
-    {
-      name: "Kool Aid And Frozen Pizza",
-      cover: kids,
-      artist: "Mac Miller",
-      audio: kanfp,
-      color: ["#BC82FD", "#0ca2af"],
-      id: uuidv4(),
-      active: false,
-    },
-    {
       name: "Nikes On My Feet",
       cover: kids,
       artist: "Mac Miller",
       audio: nomf,
+      color: ["#BC82FD", "#0ca2af"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "Harbor",
+      cover: tft,
+      artist: "The Field Tapes",
+      audio: harbor,
       color: ["#BC82FD", "#0ca2af"],
       id: uuidv4(),
       active: false,
