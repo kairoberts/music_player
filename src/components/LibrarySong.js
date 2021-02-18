@@ -1,15 +1,10 @@
 import React, { useContext } from "react";
 import { MusicContext } from "../context/MusicContext";
 
-const LibrarySong = ({ song }) => {
-  const {
-    songs,
-    setCurrentSong,
-    audioRef,
-    isPlaying,
-    setSongs,
-    id,
-  } = useContext(MusicContext);
+const LibrarySong = ({ song, id }) => {
+  const { songs, setCurrentSong, audioRef, isPlaying, setSongs } = useContext(
+    MusicContext
+  );
 
   // setting the song
   const songHandler = async () => {
