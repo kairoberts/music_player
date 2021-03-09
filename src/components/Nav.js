@@ -8,7 +8,7 @@ const Nav = () => {
     <nav>
       <h1>Roberts Radio</h1>
       <button onClick={() => setLibraryStatus(!libraryStatus)}>
-        Library <BsMusicNoteBeamed />
+        {libraryStatus ? "Close" : "Library"} <BsMusicNoteBeamed />
       </button>
     </nav>
   );
